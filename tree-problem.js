@@ -24,7 +24,11 @@ function growTreeForSeasons(startingTreeHeight, numberOfSeasons, growthPattern) 
     var treeHeight = startingTreeHeight;
 
     for (var i = 1; i <= numberOfSeasons; i++) {
-
+        var currentSeason = growthPattern[(i - 1) % growthPattern.length]
+        treeHeight = currentSeason.growthFunction(treeHeight);
     }
 
+    return treeHeight;
 }
+
+console.log(growTreeForSeasons(0,2,GROWTH_PATTEN));

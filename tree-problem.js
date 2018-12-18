@@ -20,3 +20,4 @@ function springGrowthFunction(currentHeight) {
 
 const Spring = new GrowthSeason("Spring", fallGrowthFunction);
 
+const GROWTH_PATTEN = [Fall, Spring];

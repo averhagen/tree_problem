@@ -12,7 +12,7 @@ function fallGrowthFunction(currentHeight) {
 }
 
 function springGrowthFunction(currentHeight) {
-    return currentHeight * currentHeight;
+    return currentHeight * 2;
 }
 
 const Fall = new GrowthSeason("Fall", fallGrowthFunction);
